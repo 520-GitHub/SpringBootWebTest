@@ -1,0 +1,23 @@
+server:
+  port: 9090
+spring:
+#  security:
+#    user:
+#      name: admin
+#      password: admin
+#      roles:
+#        - user
+#        - admin
+  datasource:
+    url: jdbc:mysql://192.168.0.161:3306/newpn
+    username: root
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  mvc:
+    static-path-pattern: /static/**
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+hello:
+  world:
+    value: '自定义starter'
